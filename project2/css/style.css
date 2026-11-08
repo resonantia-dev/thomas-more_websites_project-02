@@ -169,3 +169,152 @@ body {
     color: var(--forge-violet);
     text-decoration: underline;
 }
+
+/* =========================================
+   CV PAGE - HYBRID // CONTROLLED FORGE
+   ========================================= */
+
+.cv-intro {
+    background-color: var(--forge-graphite);
+    color: var(--silver-white);
+}
+
+.cv-intro h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+}
+
+.cv-intro .lead {
+    color: var(--ice-signal);
+}
+
+.cv-content {
+    background-color: var(--silver-white);
+}
+
+.cv-panel {
+    background-color: #FFFFFF;
+    border: 1px solid var(--steel-silver);
+    border-radius: 4px;
+    padding: 2rem;
+    height: auto;
+}
+
+.cv-panel h2 {
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+}
+
+.cv-panel h3 {
+    font-weight: 600;
+}
+
+.cv-panel p {
+    line-height: 1.7;
+}
+
+.cv-meta {
+    color: #526174;
+    font-size: 0.9rem;
+}
+
+.cv-portrait {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.cv-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.cv-tags span {
+    background-color: #E9EDF2;
+    color: var(--forge-graphite);
+    padding: 0.4rem 0.7rem;
+    border-radius: 3px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* Career timeline */
+
+.cv-career {
+    background-color: #E9EDF2;
+}
+
+.cv-career h2 {
+    font-weight: 700;
+}
+
+.career-step {
+    background-color: var(--forge-graphite);
+    color: var(--silver-white);
+    padding: 1.25rem;
+    border-top: 3px solid var(--forge-violet);
+    font-weight: 600;
+    height: 100%;
+}
+
+/* Skills carousel */
+
+.cv-skills {
+    background-color: var(--silver-white);
+}
+
+.cv-skills h2 {
+    font-weight: 700;
+}
+
+.skills-swiper {
+    padding: 1rem 0 3.5rem;
+}
+
+.skill-card {
+    background-color: #FFFFFF;
+    border: 1px solid var(--steel-silver);
+    border-radius: 4px;
+    padding: 2rem 1rem;
+    min-height: 190px;
+    text-align: center;
+}
+
+.skill-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 1.5rem;
+}
+
+.skill-card h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.skills-swiper .swiper-pagination-bullet-active {
+    background-color: var(--forge-violet);
+}
+
+/* Mobile adjustments */
+
+@media (max-width: 767.98px) {
+
+    .cv-panel {
+        padding: 1.5rem;
+    }
+
+    .cv-intro {
+        padding: 3rem 0;
+    }
+
+    .career-step {
+        padding: 1rem 0.5rem;
+        font-size: 0.85rem;
+    }
+
+}
