@@ -1,0 +1,171 @@
+/* =========================================
+   PROJECT 02 - PORTFOLIO
+   Hybrid // Controlled Forge
+   ========================================= */
+
+:root {
+    --forge-graphite: #11151C;
+    --silver-white: #F4F6F8;
+    --steel-silver: #B9C1CC;
+    --ice-signal: #55D9FF;
+    --forge-violet: #8B6CFF;
+    --forge-ember: #FF6A3D;
+}
+
+/* General page styling */
+
+body {
+    background-color: var(--silver-white);
+    color: var(--forge-graphite);
+}
+
+/* Navigation */
+
+.navbar {
+    background-color: var(--forge-graphite) !important;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus-visible {
+    color: var(--ice-signal);
+}
+
+.navbar .nav-link.active {
+    color: var(--ice-signal);
+}
+
+/* Homepage hero */
+
+.hero-section {
+    background-color: var(--forge-graphite);
+    color: var(--silver-white);
+    padding: 5rem 0;
+}
+
+.hero-label {
+    color: var(--ice-signal);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.15rem;
+}
+
+.hero-section h1 {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: 700;
+}
+
+.hero-section h2 {
+    color: var(--ice-signal);
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-description {
+    max-width: 600px;
+    line-height: 1.8;
+    color: var(--steel-silver);
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.btn-forge {
+    background-color: var(--ice-signal);
+    color: var(--forge-graphite);
+    font-weight: 600;
+}
+
+.btn-forge:hover {
+    background-color: var(--forge-violet);
+    color: white;
+}
+
+.hero-portrait {
+    width: 100%;
+    max-height: 450px;
+    object-fit: contain;
+}
+
+/* Responsive hero refinements */
+
+@media (max-width: 767.98px) {
+    .hero-section {
+        padding: 3rem 0;
+    }
+
+    .hero-portrait {
+        max-width: 320px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+/* About section */
+
+.about-section {
+    background-color: var(--silver-white);
+}
+
+.section-label {
+    color: #126A85;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.12rem;
+}
+
+/* Featured projects */
+
+.projects-section {
+    background-color: #E9EDF2;
+}
+
+.projects-section .card {
+    border: 1px solid var(--steel-silver);
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.projects-section .card:hover {
+    transform: translateY(-4px);
+}
+
+.projects-section .card-img-top {
+    height: 190px;
+    object-fit: cover;
+}
+
+.projects-section .card-body {
+    padding: 1.5rem;
+}
+
+.projects-section .card h3 {
+    font-weight: 700;
+}
+
+/* Footer */
+
+.site-footer {
+    background-color: var(--forge-graphite);
+    color: var(--silver-white);
+    border-top: 3px solid var(--ice-signal);
+}
+
+.footer-link {
+    color: var(--ice-signal);
+    text-decoration: none;
+}
+
+.footer-link:hover,
+.footer-link:focus-visible {
+    color: var(--forge-violet);
+    text-decoration: underline;
+}
