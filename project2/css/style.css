@@ -470,3 +470,173 @@ body {
         padding-bottom: 3rem;
     }
 }
+
+/* =========================================
+   HOBBIES PAGE
+   Hybrid // Controlled Forge
+   ========================================= */
+
+/* Introduction */
+
+.hobby-intro {
+    background-color: var(--forge-graphite);
+    color: var(--silver-white);
+}
+
+.hobby-intro h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+}
+
+.hobby-intro .lead {
+    color: var(--ice-signal);
+}
+
+.hobby-intro-text {
+    max-width: 750px;
+    line-height: 1.8;
+    color: var(--steel-silver);
+}
+
+/* Carousel gallery */
+
+.hobby-gallery {
+    background-color: var(--silver-white);
+}
+
+.hobby-gallery h2,
+.hobby-interests h2 {
+    font-weight: 700;
+}
+
+.hobby-carousel {
+    background-color: var(--forge-graphite);
+    border: 1px solid var(--steel-silver);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.hobby-carousel .carousel-item img {
+    height: 500px;
+    width: 100%;
+    object-fit: contain;
+    background-color: var(--forge-graphite);
+}
+
+.hobby-carousel .carousel-caption {
+    position: static;
+    display: block;
+    background-color: #1B222D;
+    color: var(--silver-white);
+    padding: 1.25rem 4rem 2.75rem;
+    text-align: center;
+}
+
+.hobby-carousel .carousel-caption h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--ice-signal);
+}
+
+.hobby-carousel .carousel-caption p {
+    margin-bottom: 0;
+}
+
+.hobby-carousel .carousel-indicators {
+    margin-bottom: 0.75rem;
+}
+
+.hobby-carousel .carousel-control-prev,
+.hobby-carousel .carousel-control-next {
+    height: 500px;
+}
+
+/* Interest cards */
+
+.hobby-interests {
+    background-color: #E9EDF2;
+}
+
+.hobby-card {
+    background-color: #FFFFFF;
+    border: 1px solid var(--steel-silver);
+    border-radius: 4px;
+    padding: 2rem;
+}
+
+.hobby-card h3 {
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+}
+
+.hobby-card p {
+    line-height: 1.7;
+}
+
+.hobby-card-image {
+    width: 100%;
+    max-height: 240px;
+    object-fit: cover;
+    border-radius: 3px;
+    margin-bottom: 1.5rem;
+}
+
+.hobby-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.hobby-tags span {
+    background-color: #E9EDF2;
+    color: var(--forge-graphite);
+    border-radius: 3px;
+    padding: 0.4rem 0.7rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* Final CTA */
+
+.hobby-cta {
+    background-color: var(--forge-graphite);
+    color: var(--silver-white);
+    border-top: 3px solid var(--forge-violet);
+}
+
+.hobby-cta h2 {
+    font-weight: 700;
+}
+
+.hobby-cta p {
+    color: var(--steel-silver);
+}
+
+/* Mobile adjustments */
+
+@media (max-width: 767.98px) {
+
+    .hobby-carousel .carousel-item img {
+        height: 260px;
+    }
+
+    .hobby-carousel .carousel-control-prev,
+    .hobby-carousel .carousel-control-next {
+        height: 260px;
+    }
+
+    .hobby-carousel .carousel-caption {
+        padding: 1.25rem 2.5rem 2.75rem;
+    }
+
+    .hobby-card {
+        padding: 1.5rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .hobby-carousel .carousel-item {
+        transition: none;
+    }
+}
