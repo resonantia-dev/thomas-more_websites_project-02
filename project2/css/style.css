@@ -640,3 +640,142 @@ body {
         transition: none;
     }
 }
+
+/* =========================================
+   CONTACT PAGE
+   Hybrid // Controlled Forge
+   ========================================= */
+
+/* Introduction */
+
+.contact-intro {
+    background-color: var(--forge-graphite);
+    color: var(--silver-white);
+}
+
+.contact-intro h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+}
+
+.contact-intro .lead {
+    color: var(--ice-signal);
+}
+
+.contact-intro-text {
+    color: var(--steel-silver);
+    line-height: 1.8;
+    max-width: 750px;
+}
+
+/* Contact panels */
+
+.contact-content {
+    background-color: var(--silver-white);
+}
+
+.contact-panel {
+    background-color: #FFFFFF;
+    border: 1px solid var(--steel-silver);
+    border-radius: 4px;
+    padding: 2rem;
+    overflow-wrap: anywhere;
+}
+
+.contact-panel h2 {
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.contact-panel h3 {
+    font-weight: 700;
+}
+
+.contact-panel p,
+.contact-panel li {
+    line-height: 1.7;
+}
+
+.contact-link {
+    color: #126A85;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-link:hover,
+.contact-link:focus-visible {
+    color: #6848D6;
+    text-decoration: underline;
+}
+
+/* Availability */
+
+.contact-availability {
+    background-color: #E9EDF2;
+    padding: 1.5rem;
+    border-left: 3px solid var(--forge-violet);
+}
+
+.contact-privacy {
+    color: #526174;
+    font-size: 0.85rem;
+}
+
+/* Contact form */
+
+.contact-panel .form-label {
+    font-weight: 600;
+}
+
+.contact-panel .form-control,
+.contact-panel .form-select {
+    border: 1px solid var(--steel-silver);
+    border-radius: 3px;
+    padding: 0.75rem;
+}
+
+.contact-panel .form-control:focus,
+.contact-panel .form-select:focus {
+    border-color: #126A85;
+    box-shadow: 0 0 0 0.2rem rgba(85, 217, 255, 0.25);
+}
+
+.contact-panel textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.form-note {
+    font-size: 0.85rem;
+    color: #526174;
+}
+
+/* Closing section */
+
+.contact-closing {
+    background-color: #E9EDF2;
+    border-top: 3px solid var(--forge-violet);
+}
+
+.contact-closing h2 {
+    font-weight: 700;
+}
+
+.contact-closing p {
+    max-width: 850px;
+    line-height: 1.8;
+}
+
+/* Mobile */
+
+@media (max-width: 767.98px) {
+
+    .contact-panel {
+        padding: 1.5rem;
+    }
+
+    .contact-availability {
+        padding: 1rem;
+    }
+
+}
