@@ -779,3 +779,24 @@ body {
     }
 
 }
+
+/* Footer social link */
+
+.footer-social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: var(--ice-signal);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-social-link i {
+    font-size: 1.5rem;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus-visible {
+    color: var(--forge-violet);
+    text-decoration: underline;
+}
