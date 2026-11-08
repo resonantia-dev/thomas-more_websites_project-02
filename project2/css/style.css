@@ -318,3 +318,155 @@ body {
     }
 
 }
+
+/* =========================================
+   EXPERIENCE PAGE
+   Hybrid // Controlled Forge
+   ========================================= */
+
+/* Introduction */
+
+.experience-intro {
+    background-color: var(--forge-graphite);
+    color: var(--silver-white);
+}
+
+.experience-intro h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+}
+
+.experience-intro .lead {
+    color: var(--ice-signal);
+}
+
+.experience-intro-text {
+    color: var(--steel-silver);
+    max-width: 750px;
+    line-height: 1.8;
+}
+
+/* Projects */
+
+.experience-project {
+    background-color: var(--silver-white);
+}
+
+.experience-project h2 {
+    font-weight: 700;
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.project-status {
+    color: #526174;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.experience-panel {
+    background-color: #FFFFFF;
+    border: 1px solid var(--steel-silver);
+    border-radius: 4px;
+    padding: 2rem;
+}
+
+.experience-panel h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.experience-panel h3:first-child {
+    margin-top: 0;
+}
+
+.experience-panel p,
+.experience-panel li {
+    line-height: 1.7;
+}
+
+.project-disclaimer {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--steel-silver);
+    font-size: 0.85rem;
+    color: #526174;
+}
+
+/* Project images */
+
+.project-figure {
+    margin-bottom: 0;
+    background-color: #FFFFFF;
+    border: 1px solid var(--steel-silver);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.project-figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.project-figure figcaption {
+    padding: 0.75rem 1rem;
+    font-size: 0.8rem;
+    color: #526174;
+}
+
+/* Dark Signalbound section */
+
+.experience-project-dark {
+    background-color: var(--forge-graphite);
+    color: var(--silver-white);
+}
+
+.experience-project-dark .project-status {
+    color: var(--steel-silver);
+}
+
+.experience-project-dark .experience-panel {
+    background-color: #1B222D;
+    color: var(--silver-white);
+    border-color: #394454;
+}
+
+.experience-project-dark .project-disclaimer {
+    color: var(--steel-silver);
+    border-color: #394454;
+}
+
+.experience-project-dark .project-figure {
+    background-color: #1B222D;
+    border-color: #394454;
+}
+
+.experience-project-dark figcaption {
+    color: var(--steel-silver);
+}
+
+/* Final contact section */
+
+.experience-cta {
+    background-color: #E9EDF2;
+    border-top: 3px solid var(--forge-violet);
+}
+
+.experience-cta h2 {
+    font-weight: 700;
+}
+
+/* Responsive adjustments */
+
+@media (max-width: 767.98px) {
+    .experience-panel {
+        padding: 1.5rem;
+    }
+
+    .experience-project {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
